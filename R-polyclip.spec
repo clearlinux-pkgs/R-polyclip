@@ -4,12 +4,12 @@
 #
 Name     : R-polyclip
 Version  : 1.6.1
-Release  : 3
+Release  : 4
 URL      : https://cran.r-project.org/src/contrib/polyclip_1.6-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/polyclip_1.6-1.tar.gz
 Summary  : Polygon Clipping
 Group    : Development/Tools
-License  : BSL
+License  : BSL-1.0
 Requires: R-polyclip-lib
 BuildRequires : clr-R-helpers
 
@@ -32,11 +32,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521211192
+export SOURCE_DATE_EPOCH=1521211562
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521211192
+export SOURCE_DATE_EPOCH=1521211562
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
