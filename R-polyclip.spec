@@ -4,7 +4,7 @@
 #
 Name     : R-polyclip
 Version  : 1.9.1
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/polyclip_1.9-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/polyclip_1.9-1.tar.gz
 Summary  : Polygon Clipping
