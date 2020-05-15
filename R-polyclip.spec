@@ -4,7 +4,7 @@
 #
 Name     : R-polyclip
 Version  : 1.10.0
-Release  : 33
+Release  : 34
 URL      : https://cran.r-project.org/src/contrib/polyclip_1.10-0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/polyclip_1.10-0.tar.gz
 Summary  : Polygon Clipping
@@ -12,7 +12,6 @@ Group    : Development/Tools
 License  : BSL-1.0
 Requires: R-polyclip-lib = %{version}-%{release}
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
 No detailed description available
@@ -27,21 +26,22 @@ lib components for the R-polyclip package.
 
 %prep
 %setup -q -c -n polyclip
+cd %{_builddir}/polyclip
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571876558
+export SOURCE_DATE_EPOCH=1589532218
 
 %install
-export SOURCE_DATE_EPOCH=1571876558
+export SOURCE_DATE_EPOCH=1589532218
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
