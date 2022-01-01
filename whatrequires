@@ -1,2 +1,2 @@
 # This file contains recursive sources that require this package
-R-spatstat
+R-spatstat.geom
