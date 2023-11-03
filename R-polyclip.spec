@@ -5,7 +5,7 @@
 #
 Name     : R-polyclip
 Version  : 1.10.6
-Release  : 57
+Release  : 58
 URL      : https://cran.r-project.org/src/contrib/polyclip_1.10-6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/polyclip_1.10-6.tar.gz
 Summary  : Polygon Clipping
